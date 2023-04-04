@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite" verbose="4">
+<parameter name="url" value="http://leaftaps.com/opentaps/"/>
+  <test thread-count="2" name="using ChromeBroswer" parallel="classes">
+    <parameter name="browser" value="chrome"/>
+      <classes>
+        <class name="week6.day1.DuplicateLead"/>
+      <class name="week6.day1.EditLead"/>
+      <class name="week6.day1.CreateLead"/>
+    
+    </classes>
+     </test> <!-- Test -->
+     
+   <test thread-count="2" name="using firefoxbrowser" parallel="classes">
+    <parameter name="browser" value="firefox"/>
+    <classes>
+    <class name="week6.day1.DeleteLead"/>
+      <class name="week6.day1.MergeLead"/>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->
