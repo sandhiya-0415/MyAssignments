@@ -22,7 +22,7 @@ public class createlead extends ParentClass{
 	}
 	public createlead givecompanyname(String cname)
 	{
-		driver.findElement(By.id("createLeadForm_companyName")).sendKeys(cname);
+		driver.findElement(By.id(prop.getProperty("createlead.clickcreatelead.id"))).sendKeys(cname);
 		return this;
 	}
 	public createlead givefirstname(String fname)

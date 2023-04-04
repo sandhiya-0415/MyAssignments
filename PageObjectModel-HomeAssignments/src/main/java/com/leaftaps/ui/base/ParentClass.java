@@ -21,7 +21,7 @@ import io.github.bonigarcia.wdm.WebDriverManager;
 public class ParentClass {
 	public RemoteWebDriver driver;
 	public FileInputStream fis;
-	public Properties prop;
+	public static Properties prop;
 	public String datasource;
 	@Parameters({"browsername","url"})
 	@BeforeMethod
